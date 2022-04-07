@@ -44,6 +44,31 @@
   line-height: normal;
   font-family: 'Roboto', sans-serif;
 }
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+
+  /* Set a specific height */
+  height: 30%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
 </style>
 
 <body>
@@ -79,14 +104,21 @@
   <a href="https://www.linkedin.com/in/kaitlin-zareno/" onclick="w3_close()" class="w3-bar-item w3-button">Linkedin</a>
 </nav>
 
-<header class="title_img w3-display-container w3-grayscale-min">
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>Projects</h1>
+    <h3>Projects, Project Classes, UROPS, and Other Things</h3>
+  </div>
+</div>
+
+<!-- <header class="title_img w3-display-container w3-grayscale-min">
   <div class="w3-display-bottommiddle w3-text-white w3-center">
   <div class="w3-container w3-row-padding" style="margin: 39px 0px 0px 0px; padding: 1%;"> -->
-    <h1 class="w3-center">Projects</h1>
-    <p class="w3-center" style="font-weight:bold">Projects, Project Classes, UROPS, and Other Things</p>
-  </div>
-  </div>
-</header>
+    <!-- <h1 class="w3-center">Projects</h1> -->
+    <!-- <p class="w3-center" style="font-weight:bold">Projects, Project Classes, UROPS, and Other Things</p> -->
+  <!-- </div> -->
+  <!-- </div> -->
+<!-- </header> --> 
   <!-- End of repeated content on each page-->
 
   <!-- Lab Sections -->
@@ -95,9 +127,9 @@
       <div class="w3-card w3-center lab">
         <img src="img/lab3.png" alt="Survival" onclick="onClick(this)"> <!-- class="w3-hover-opacity"-->
         <div class="w3-container" style="margin-top:auto">
-          <h3>6.141 </h3>
-          <h4>Wall Follower on the Racecar</h4>
-          <p><a href="lab3/"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-info-circle"></i> More info</button></a></p>
+          <h3>6.141: RSS Team 4 </h3>
+          <h4>Robotics Science and Systems Team Page</h4>
+          <p><a href="https://rss2022-4.github.io/website/#about"><button class="w3-button w3-light-grey w3-block"><i class="fa fa-info-circle"></i> More info</button></a></p>
         </div>
       </div>
   </div>
